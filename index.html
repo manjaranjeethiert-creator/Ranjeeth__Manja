@@ -280,38 +280,27 @@
 
 
     <div id="section7" style="display: none;">
-        <div class="second_container d-flex flex-column align-items-center">
-            <h2 class="main_section_heading mb-4">Add Your Information</h2>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 profile-card shadow p-4">
-                        <form action="https://formspree.io/f/your_id_here" method="POST">
-                            <div class="form-group">
-                                <label class="font-weight-bold">Full Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Ex: Manja Ranjeeth" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="font-weight-bold">Category</label>
-                                <select name="category" class="form-control" required>
-                                    <option value="Student">Student</option>
-                                    <option value="Teacher">Teacher</option>
-                                    <option value="Police">Police</option>
-                                    <option value="Army">Army</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="font-weight-bold">Details (Course, Rank, or Bio)</label>
-                                <textarea name="details" class="form-control" rows="4" placeholder="Mention your college, designation, etc." required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block rounded-pill shadow">Submit for Approval</button>
-                        </form>
-                    </div>
+    <div class="second_container d-flex flex-column align-items-center">
+        <h2 class="main_section_heading mb-4">Add Your Information</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-8 profile-card shadow p-5 text-center">
+                    <i class="fas fa-file-alt fa-3x mb-3 text-primary"></i>
+                    <h3 class="name-text">Join the Mathura Labana Network</h3>
+                    <p class="detail-text mb-4">
+                        Please click the button below to fill out our official Google Form. 
+                        Once you submit your details, we will review and add you to the directory.
+                    </p>
+                    
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnKjZOQUBhKvCy4MRuP0uENqE9xeALEmA6b3DChGX7YayScQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary btn-block rounded-pill shadow font-weight-bold p-3">
+                        Open Google Form <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
                 </div>
             </div>
-            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
         </div>
+        <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
     </div>
-
+</div>
     <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 
