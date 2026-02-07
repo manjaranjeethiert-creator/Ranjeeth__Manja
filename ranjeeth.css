@@ -1,53 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Section 1 Layout */
 .section1_container {
-    background-color: lightblue;
-
-    width: 100vw;
-    height: 100vh;
+    background-color: #add8e6;
+    /* Lightblue */
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
 }
 
 .main_section_heading {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 30px;
+}
 
+.text-container {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.telugu-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .main_section_paragraph {
     font-size: 15px;
-    font-weight: bold;
+    line-height: 1.6;
+    color: #444;
 }
 
+/* Section 2 Layout */
 .second_container {
-    background-color: lightblue;
+    background-color: #add8e6;
     min-height: 100vh;
-    width: 100vw;
-    padding: 20px 0;
+    padding: 40px 10px;
 }
-
 
 .category-box {
-    background-color: #e3f2fd;
-    border-radius: 12px;
+    background-color: #ffffff;
+    /* White cards look better on blue */
+    border-radius: 15px;
     margin: 10px 0;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 
 .category-box:hover {
     transform: translateY(-5px);
-    background-color: #ffffff;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 .second_container_heading {
     color: #003366;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: bold;
     margin: 0;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
+}
+
+/* Button Styling */
+.btn-custom {
+    width: 250px;
+    max-width: 80% !important;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+/* Contact Styling */
+.contact-section {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.contact-text {
+    color: #003366;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.icon-ig {
+    color: #E1306C;
+}
+
+.icon-li {
+    color: #0077b5;
 }
