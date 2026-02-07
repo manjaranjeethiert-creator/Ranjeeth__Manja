@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathura Labana Portal</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="ranjeeth.css">
 </head>
 
@@ -19,19 +17,15 @@
     <div id="section1">
         <div class="d-flex flex-column justify-content-center align-items-center section1_container container-fluid">
             <h1 class="main_section_heading">"Mathura Labana: Student & Professional Connect"</h1>
-
             <div class="text-container">
                 <p class="telugu-text">
-                    ఈ పోర్టల్ విద్యార్థులు మరియు ఉద్యోగుల మధ్య ఒక గొప్ప వారధిలా పనిచేస్తుంది. ఇది 12వ తరగతి పూర్తి చేసిన విద్యార్థులను మరియు వివిధ ఉద్యోగాల్లో ఉన్న నిపుణులను ఒకచోట చేరుస్తుంది. మా నెట్‌వర్క్‌లో ఉన్నత విద్య చదువుతున్న విద్యార్థుల వివరాలు మరియు వివిధ రంగాల ఉద్యోగుల సమాచారం అందుబాటులో ఉంటుంది. ఒకరికొకరు సలహాలు ఇచ్చుకోవడం ద్వారా, మన యువత మంచి కెరీర్‌ను ఎంచుకోవడానికి మేము సహాయం చేస్తాము.
+                    ఈ పోర్టల్ విద్యార్థులు మరియు ఉద్యోగుల మధ్య ఒక గొప్ప వారధిలా పనిచేస్తుంది. ఇది 12వ తరగతి పూర్తి చేసిన విద్యార్థులను మరియు వివిధ ఉద్యోగాల్లో ఉన్న నిపుణులను ఒకచోట చేరుస్తుంది.
                 </p>
                 <p class="main_section_paragraph">
-                    This portal serves as a helpful bridge between students and professionals. It connects students who have finished 12th grade with people who are already working in various jobs. Our network shares information about students in higher education and experts in different fields. By talking and sharing advice, we help our youth find the right career paths.
+                    This portal serves as a helpful bridge between students and professionals. It connects students who have finished 12th grade with people who are already working in various jobs.
                 </p>
             </div>
-
-            <button class="btn btn-primary btn-custom" onclick="display('section2')">
-                Enter Portal
-            </button>
+            <button class="btn btn-primary btn-custom shadow" onclick="display('section2')">Enter Portal</button>
         </div>
     </div>
 
@@ -39,53 +33,285 @@
         <div class="second_container d-flex flex-column align-items-center">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 col-lg-6 category-box">
-                        <h2 class="second_container_heading">
-                            <i class="fas fa-chalkboard-teacher mr-2"></i> Teaching Professionals
-                        </h2>
+                    <div class="col-11 col-md-8 col-lg-6 category-box" onclick="display('section3')">
+                        <h2 class="second_container_heading"><i class="fas fa-chalkboard-teacher mr-2"></i> Teaching Professionals</h2>
                     </div>
-                    <div class="col-11 col-md-8 col-lg-6 category-box">
-                        <h2 class="second_container_heading">
-                            <i class="fas fa-user-shield mr-2"></i> Police
-                        </h2>
+                    <div class="col-11 col-md-8 col-lg-6 category-box" onclick="display('section4')">
+                        <h2 class="second_container_heading"><i class="fas fa-user-shield mr-2"></i> Police</h2>
                     </div>
-                    <div class="col-11 col-md-8 col-lg-6 category-box">
-                        <h2 class="second_container_heading">
-                            <i class="fas fa-medal mr-2"></i> Army
-                        </h2>
+                    <div class="col-11 col-md-8 col-lg-6 category-box" onclick="display('section5')">
+                        <h2 class="second_container_heading"><i class="fas fa-medal mr-2"></i> Army</h2>
                     </div>
-                    <div class="col-11 col-md-8 col-lg-6 category-box">
-                        <h2 class="second_container_heading">
-                            <i class="fas fa-user-graduate mr-2"></i> Students
-                        </h2>
+                    <div class="col-11 col-md-8 col-lg-6 category-box" onclick="display('section6')">
+                        <h2 class="second_container_heading"><i class="fas fa-user-graduate mr-2"></i> Students</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-3">
+                    <div class="col-11 col-md-8 col-lg-6">
+                        <button class="btn btn-warning btn-block rounded-pill font-weight-bold shadow-sm" onclick="display('section7')">
+                            <i class="fas fa-plus-circle mr-2"></i> Add Your Information
+                        </button>
                     </div>
                 </div>
 
                 <div class="row justify-content-center mt-4">
-                    <div class="col-11 text-center contact-section">
+                    <div class="col-11 text-center contact-section shadow-sm">
                         <p class="contact-text">If your name does not exist, please contact on:</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <a href="https://www.instagram.com/troubleshooter_19" target="_blank">
-                                <i class="fab fa-instagram fa-2x mx-3 icon-ig"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank">
-                                <i class="fab fa-linkedin fa-2x mx-3 icon-li"></i>
-                            </a>
-                            <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank">
-                                <i class="fab fa-instagram fa-2x mx-3 icon-ig"></i>
-                            </a>
+                            <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                            <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
+                            <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-
             <button class="btn btn-secondary btn-custom mt-4" onclick="display('section1')">Back</button>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div id="section3" style="display: none;">
+        <div class="second_container d-flex flex-column align-items-center">
+            <h2 class="main_section_heading mb-4">Teaching Professionals</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-10">
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770457102/WhatsApp_Image_2026-02-07_at_15.04.39_w2xc7y.jpg" class="profile-img mr-3" alt="Teacher">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Name: Manja Penatiah</h3>
+                                    <p class="detail-text"><strong>Subject Expertise:</strong> ALL Subjects</p>
+                                    <p class="detail-text"><strong>Institution:</strong> Govt Primary School Gauraram</p>
+                                    <p class="detail-text"><strong>Contact:</strong> 8008070900</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770458073/WhatsApp_Image_2026-02-07_at_15.24.02_yeerz9.jpg" class="profile-img mr-3" alt="Teacher">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Name: Manja Sharadha</h3>
+                                    <p class="detail-text"><strong>Subject Expertise:</strong> Pre-primary</p>
+                                    <p class="detail-text"><strong>Institution:</strong> Pre-primary School Thipparam Thanda</p>
+                                    <p class="detail-text"><strong>Contact:</strong> 8008070900</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-11 text-center contact-section shadow-sm">
+                    <p class="contact-text">If your name does not exist, please contact on:</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                        <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
+                        <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
+        </div>
+    </div>
+
+    <div id="section4" style="display: none;">
+        <div class="second_container d-flex flex-column align-items-center">
+            <h2 class="main_section_heading mb-4">Police Directory</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-10">
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770460446/WhatsApp_Image_2026-02-07_at_15.50.21_hh26jl.jpg" class="profile-img mr-3" alt="Police">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Full Name and Rank: M. Gabbar Singh, PC</h3>
+                                    <p class="detail-text"><strong>Wing:</strong> Law & Order</p>
+                                    <p class="detail-text"><strong>Posting:</strong> Nizamabad Town-VI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770462200/WhatsApp_Image_2026-02-07_at_16.32.32_x8988v.jpg" class="profile-img mr-3" alt="Police">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Full Name and Rank: Bassi Jeevandas, PC</h3>
+                                    <p class="detail-text"><strong>Wing:</strong> SGRF and TGSP</p>
+                                    <p class="detail-text"><strong>Posting:</strong> 7th Battalion, Dichpally</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-11 text-center contact-section shadow-sm">
+                    <p class="contact-text">If your name does not exist, please contact on:</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                        <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
+                        <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
+        </div>
+    </div>
+
+    <div id="section5" style="display: none;">
+        <div class="second_container d-flex flex-column align-items-center">
+            <h2 class="main_section_heading mb-4">Army Directory</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-10">
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770461227/WhatsApp_Image_2026-02-07_at_16.15.05_nreswz.jpg" class="profile-img mr-3" alt="Army">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Full Name: Manja Eshwar</h3>
+                                    <p class="detail-text"><strong>Corps:</strong> Driving</p>
+                                    <p class="detail-text"><strong>Entry:</strong> Open Rally Agniveer</p>
+                                    <p class="detail-text"><strong>Insta:</strong> eshwar_love_</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-11 text-center contact-section shadow-sm">
+                    <p class="contact-text">If your name does not exist, please contact on:</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                        <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
+                        <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
+        </div>
+    </div>
+
+    <div id="section6" style="display: none;">
+        <div class="second_container d-flex flex-column align-items-center">
+            <h2 class="main_section_heading mb-4">Students Directory</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-10">
+
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770458789/WhatsApp_Image_2026-02-07_at_15.28.11_qk9p6t.jpg" class="profile-img mr-3" alt="Student">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Full Name: Baman Teja</h3>
+                                    <p class="detail-text"><strong>Course:</strong> M.Tech 3rd Year</p>
+                                    <p class="detail-text"><strong>College:</strong> IIT BHUBANESWAR</p>
+                                    <p class="detail-text"><strong>Year of Completion:</strong> 2028</p>
+                                    <p class="detail-text"><strong>linkedin:</strong> Baman Teja</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770459674/WhatsApp_Image_2026-02-07_at_15.50.16_jqejlr.jpg" class="profile-img mr-3" alt="Student">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Full Name: Manja Ranjeeth</h3>
+                                    <p class="detail-text"><strong>Course:</strong> B.Tech 3rd Year</p>
+                                    <p class="detail-text"><strong>College:</strong> NIT Warangale</p>
+                                    <p class="detail-text"><strong>Year of Completion:</strong> 2027</p>
+                                    <p class="detail-text"><strong>linkedin:</strong>Ranjeeth Manja</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770458991/WhatsApp_Image_2026-02-07_at_15.08.31_e2gcld.jpg" class="profile-img mr-3" alt="Student">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Full Name:Sable Pathesingh</h3>
+                                    <p class="detail-text"><strong>Course:</strong> B.Tech 3rd Year</p>
+                                    <p class="detail-text"><strong>College:</strong> Lovely Professional Unversity</p>
+                                    <p class="detail-text"><strong>Year of Completion:</strong> 2027</p>
+                                    <p class="detail-text"><strong>linkedin:</strong> Sable Pathesingh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770461903/WhatsApp_Image_2026-02-07_at_16.24.39_wbka9l.jpg" class="profile-img mr-3" alt="Student">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Full Name: Manja Charanjeeth</h3>
+                                    <p class="detail-text"><strong>Course:</strong> B.Tech 2rd Year</p>
+                                    <p class="detail-text"><strong>College:</strong> Rajiv Gandhi Institute of Petroleum Technology. Jais, Amethi, Uttar Pradesh</p>
+                                    <p class="detail-text"><strong>Year of Completion:</strong> 2028</p>
+                                    <p class="detail-text"><strong>linkedin/instagram:</strong>manja Charanjeeth</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-card shadow-sm p-3 mb-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770459947/WhatsApp_Image_2026-02-07_at_15.55.19_q3anmf.jpg" class="profile-img mr-3" alt="Student">
+                                <div class="profile-info">
+                                    <h3 class="name-text">Full Name:T Jail singh</h3>
+                                    <p class="detail-text"><strong>Course:</strong> BA(Honours) History</p>
+                                    <p class="detail-text"><strong>College:</strong>Govt. city colleage(A)</p>
+                                    <p class="detail-text"><strong>Year of Completion:</strong> 2026</p>
+                                    <p class="detail-text"><strong>linkedin:</strong> Jail singh t</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-11 text-center contact-section shadow-sm">
+                    <p class="contact-text">If your name does not exist, please contact on:</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                        <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
+                        <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
+        </div>
+    </div>
+
+
+    <div id="section7" style="display: none;">
+        <div class="second_container d-flex flex-column align-items-center">
+            <h2 class="main_section_heading mb-4">Add Your Information</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8 profile-card shadow p-4">
+                        <form action="https://formspree.io/f/your_id_here" method="POST">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Full Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Ex: Manja Ranjeeth" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Category</label>
+                                <select name="category" class="form-control" required>
+                                    <option value="Student">Student</option>
+                                    <option value="Teacher">Teacher</option>
+                                    <option value="Police">Police</option>
+                                    <option value="Army">Army</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Details (Course, Rank, or Bio)</label>
+                                <textarea name="details" class="form-control" rows="4" placeholder="Mention your college, designation, etc." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block rounded-pill shadow">Submit for Approval</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
+        </div>
+    </div>
+
     <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 

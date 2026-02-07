@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Section 1 Layout */
-.section1_container {
+.section1_container,
+.second_container {
     background-color: #add8e6;
-    /* Lightblue */
     min-height: 100vh;
     padding: 20px;
     text-align: center;
@@ -14,7 +13,6 @@
     font-weight: bold;
     font-size: 1.8rem;
     color: #003366;
-    margin-bottom: 30px;
 }
 
 .text-container {
@@ -22,72 +20,53 @@
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-.telugu-text {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #333;
     margin-bottom: 20px;
-}
-
-.main_section_paragraph {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #444;
-}
-
-/* Section 2 Layout */
-.second_container {
-    background-color: #add8e6;
-    min-height: 100vh;
-    padding: 40px 10px;
 }
 
 .category-box {
     background-color: #ffffff;
-    /* White cards look better on blue */
     border-radius: 15px;
     margin: 10px 0;
-    transition: transform 0.3s ease;
+    cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.category-box:hover {
-    transform: translateY(-5px);
+/* Individual Profile Cards */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: left;
+    border-left: 5px solid #003366;
 }
 
-.second_container_heading {
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name-text {
+    font-size: 1.1rem;
     color: #003366;
-    font-size: 1.2rem;
     font-weight: bold;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
 }
 
-/* Button Styling */
+.detail-text {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    color: #555;
+}
+
 .btn-custom {
-    width: 250px;
-    max-width: 80% !important;
-    font-weight: bold;
-    padding: 12px;
+    width: 200px;
     border-radius: 30px;
 }
 
-/* Contact Styling */
 .contact-section {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    margin-top: 30px;
-}
-
-.contact-text {
-    color: #003366;
-    font-weight: bold;
-    font-size: 16px;
 }
 
 .icon-ig {
@@ -96,4 +75,15 @@
 
 .icon-li {
     color: #0077b5;
+}
+
+@media (max-width: 576px) {
+    .profile-card .d-flex {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 0 0 10px 0 !important;
+    }
 }
