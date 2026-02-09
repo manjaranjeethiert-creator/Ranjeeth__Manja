@@ -1,89 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.section1_container,
-.second_container {
-    background-color: #add8e6;
-    min-height: 100vh;
-    padding: 20px;
-    text-align: center;
-}
+.section1_container, .second_container { background-color: #add8e6; min-height: 100vh; padding: 20px 10px; position: relative; }
+.main_section_heading { font-family: "Roboto", sans-serif; font-weight: bold; color: #003366; }
 
-.main_section_heading {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 1.8rem;
-    color: #003366;
-}
+/* Fixed Social Footer */
+.contact-section-fixed { background: white; padding: 15px; border-radius: 20px; border-top: 4px solid #003366; margin-top: 30px; width: 100%; max-width: 500px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 
-.text-container {
-    max-width: 800px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
+.category-card { background: white; border-radius: 15px; height: 110px; display: flex; flex-direction: column; justify-content: center; align-items: center; transition: 0.3s; cursor: pointer; border: 1px solid rgba(0,0,0,0.05); }
+.category-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
 
-.category-box {
-    background-color: #ffffff;
-    border-radius: 15px;
-    margin: 10px 0;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+.edge-panel { position: fixed; right: -240px; top: 15%; width: 240px; z-index: 10000; transition: 0.4s; }
+.edge-panel.active { right: 0; }
+.edge-tab { position: absolute; left: -45px; top: 0; width: 45px; height: 60px; background: #003366; color: white; display: flex; justify-content: center; align-items: center; border-radius: 12px 0 0 12px; cursor: pointer; }
+.edge-content { background: rgba(0, 34, 68, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: 0 0 0 20px; color: white; }
 
-/* Individual Profile Cards */
-.profile-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    text-align: left;
-    border-left: 5px solid #003366;
-}
-
-.profile-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.name-text {
-    font-size: 1.1rem;
-    color: #003366;
-    font-weight: bold;
-}
-
-.detail-text {
-    font-size: 0.9rem;
-    margin-bottom: 2px;
-    color: #555;
-}
-
-.btn-custom {
-    width: 200px;
-    border-radius: 30px;
-}
-
-.contact-section {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.icon-ig {
-    color: #E1306C;
-}
-
-.icon-li {
-    color: #0077b5;
-}
-
-@media (max-width: 576px) {
-    .profile-card .d-flex {
-        flex-direction: column !important;
-        text-align: center;
-    }
-
-    .profile-img {
-        margin: 0 0 10px 0 !important;
-    }
-}
+.profile-card, .notification-card { background-color: #ffffff; border-radius: 12px; text-align: left; border-left: 6px solid #003366; margin-bottom: 15px; width: 100%; }
+.profile-img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #add8e6; }
+.name-text { font-size: 1.1rem; color: #003366; font-weight: bold; }
+.detail-text { font-size: 0.9rem; color: #555; }
+.icon-ig { color: #E1306C; }
+.icon-li { color: #0077b5; }

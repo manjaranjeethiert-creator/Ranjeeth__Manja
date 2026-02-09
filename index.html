@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,363 +14,134 @@
 </head>
 
 <body>
-    <div id="section1">
-        <div class="d-flex flex-column justify-content-center align-items-center section1_container container-fluid">
-            <h1 class="main_section_heading">"Mathura Labana: Student & Professional Connect"</h1>
-            <div class="text-container">
-                <p class="telugu-text">
-                    ఈ పోర్టల్ విద్యార్థులు మరియు ఉద్యోగుల మధ్య ఒక గొప్ప వారధిలా పనిచేస్తుంది. ఇది 12వ తరగతి పూర్తి చేసిన విద్యార్థులను మరియు వివిధ ఉద్యోగాల్లో ఉన్న నిపుణులను ఒకచోట చేరుస్తుంది.
-                </p>
-                <p class="main_section_paragraph">
-                    This portal serves as a helpful bridge between students and professionals. It connects students who have finished 12th grade with people who are already working in various jobs.
-                </p>
+    <div class="edge-panel" id="mainEdgePanel">
+        <div class="edge-tab" onclick="toggleEdge()"><i class="fas fa-bullhorn" id="edgeIcon"></i><span class="badge badge-danger badge-dot"></span></div>
+        <div class="edge-content shadow-lg">
+            <h6 class="edge-header text-uppercase">Quick Updates</h6>
+            <div class="edge-item" onclick="window.open('https://internshala.com/free-job-alerts/', '_blank')">
+                <div class="edge-icon bg-primary text-white"><i class="fas fa-briefcase"></i></div>
+                <div class="edge-text"><strong>Jobs</strong><p>Internshala</p></div>
             </div>
-            <button class="btn btn-primary btn-custom shadow" onclick="display('section2')">Enter Portal</button>
+            <div class="edge-item" onclick="window.open('https://www.buddy4study.com/', '_blank')">
+                <div class="edge-icon bg-success text-white"><i class="fas fa-graduation-cap"></i></div>
+                <div class="edge-text"><strong>Scholarships</strong><p>Buddy4Study</p></div>
+            </div>
+            <hr class="border-light opacity-20">
+            <div class="d-flex justify-content-around mt-2">
+                <a href="https://www.instagram.com/troubleshooter_19" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank" class="text-white"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section1">
+        <div class="d-flex flex-column justify-content-center align-items-center section1_container container-fluid text-center">
+            <h1 class="main_section_heading">"Mathura Labana Portal"</h1>
+            <button class="btn btn-primary btn-custom shadow mt-4" onclick="display('section2')">Enter Portal</button>
         </div>
     </div>
 
     <div id="section2" style="display: none;">
         <div class="second_container d-flex flex-column align-items-center">
             <div class="container">
+                <h3 class="name-text text-center mb-4 text-white">Explore Directories</h3>
                 <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 col-lg-6 category-box" onclick="display('section3')">
-                        <h2 class="second_container_heading"><i class="fas fa-chalkboard-teacher mr-2"></i> Teaching Professionals</h2>
-                    </div>
-                    <div class="col-11 col-md-8 col-lg-6 category-box" onclick="display('section4')">
-                        <h2 class="second_container_heading"><i class="fas fa-user-shield mr-2"></i> Police</h2>
-                    </div>
-                    <div class="col-11 col-md-8 col-lg-6 category-box" onclick="display('section5')">
-                        <h2 class="second_container_heading"><i class="fas fa-medal mr-2"></i> Army</h2>
-                    </div>
-                    <div class="col-11 col-md-8 col-lg-6 category-box" onclick="display('section6')">
-                        <h2 class="second_container_heading"><i class="fas fa-user-graduate mr-2"></i> Students</h2>
-                    </div>
+                    <div class="col-6 col-md-3 p-2"><div class="category-card shadow-sm" onclick="display('section3')"><i class="fas fa-chalkboard-teacher fa-2x text-primary mb-2"></i><p class="small font-weight-bold">Teaching</p></div></div>
+                    <div class="col-6 col-md-3 p-2"><div class="category-card shadow-sm" onclick="display('section4')"><i class="fas fa-user-shield fa-2x text-dark mb-2"></i><p class="small font-weight-bold">Police</p></div></div>
+                    <div class="col-6 col-md-3 p-2"><div class="category-card shadow-sm" onclick="display('section5')"><i class="fas fa-medal fa-2x text-success mb-2"></i><p class="small font-weight-bold">Army</p></div></div>
+                    <div class="col-6 col-md-3 p-2"><div class="category-card shadow-sm" onclick="display('section6')"><i class="fas fa-user-graduate fa-2x text-info mb-2"></i><p class="small font-weight-bold">Students</p></div></div>
+                    <div class="col-6 col-md-3 p-2"><div class="category-card shadow-sm" onclick="display('section9')"><i class="fas fa-user-md fa-2x text-danger mb-2"></i><p class="small font-weight-bold">Healthcare</p></div></div>
+                    <div class="col-6 col-md-3 p-2"><div class="category-card shadow-sm" onclick="display('section10')"><i class="fas fa-university fa-2x text-secondary mb-2"></i><p class="small font-weight-bold">Banking</p></div></div>
+                    <div class="col-6 col-md-3 p-2"><div class="category-card shadow-sm" onclick="display('section11')"><i class="fas fa-train fa-2x text-warning mb-2"></i><p class="small font-weight-bold">Railways</p></div></div>
+                    <div class="col-6 col-md-3 p-2"><div class="category-card shadow-sm" onclick="display('section12')"><i class="fas fa-briefcase fa-2x text-success mb-2"></i><p class="small font-weight-bold">Others</p></div></div>
                 </div>
-
-                <div class="row justify-content-center mt-3">
-                    <div class="col-11 col-md-8 col-lg-6">
-                        <button class="btn btn-warning btn-block rounded-pill font-weight-bold shadow-sm" onclick="display('section7')">
-                            <i class="fas fa-plus-circle mr-2"></i> Add Your Information
-                        </button>
-                    </div>
-                </div>
-
                 <div class="row justify-content-center mt-4">
-                    <div class="col-11 text-center contact-section shadow-sm">
-                        <p class="contact-text">If your name does not exist, please contact on:</p>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                            <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
-                            <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                        </div>
-                    </div>
+                    <div class="col-11 col-md-6"><button class="btn btn-warning btn-block rounded-pill font-weight-bold" onclick="display('section7')">Add Information</button></div>
                 </div>
             </div>
-            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section1')">Back</button>
+            <div class="contact-section-fixed"><div class="d-flex justify-content-center"><a href="https://www.instagram.com/troubleshooter_19"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a><a href="https://www.linkedin.com/in/ranjeethmanja"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a><a href="https://www.instagram.com/mathura_labana_ranjeeth"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a></div></div>
+            <button class="btn btn-secondary btn-custom mt-3" onclick="display('section1')">Back</button>
         </div>
     </div>
 
-    <div id="section3" style="display: none;">
-        <div class="second_container d-flex flex-column align-items-center">
-            <h2 class="main_section_heading mb-4">Teaching Professionals</h2>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-10">
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770470614/WhatsApp_Image_2026-02-07_at_18.17.34_umwaoy.jpg" class="profile-img mr-3" alt="Teacher">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Name: Bardhaval Meghraj(junior lecturer in History)</h3>
-                                    <p class="detail-text"><strong>Subject Expertise:</strong> History</p>
-                                    <p class="detail-text"><strong>Institution:</strong> Government Junior College, Domakonda</p>
-                                    <p class="detail-text"><strong>Contact:</strong> 889751935</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770457102/WhatsApp_Image_2026-02-07_at_15.04.39_w2xc7y.jpg" class="profile-img mr-3" alt="Teacher">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Name: Manja Penatiah</h3>
-                                    <p class="detail-text"><strong>Subject Expertise:</strong> ALL Subjects</p>
-                                    <p class="detail-text"><strong>Institution:</strong> Govt Primary School Gauraram</p>
-                                    <p class="detail-text"><strong>Contact:</strong> 8008070900</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770458073/WhatsApp_Image_2026-02-07_at_15.24.02_yeerz9.jpg" class="profile-img mr-3" alt="Teacher">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Name: Manja Sharadha</h3>
-                                    <p class="detail-text"><strong>Subject Expertise:</strong> Pre-primary</p>
-                                    <p class="detail-text"><strong>Institution:</strong> Pre-primary School Thipparam Thanda</p>
-                                    <p class="detail-text"><strong>Contact:</strong> 8008070900</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-11 text-center contact-section shadow-sm">
-                    <p class="contact-text">If your name does not exist, please contact on:</p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                        <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
-                        <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
-        </div>
-    </div>
+    <div id="section3" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Teachers</h2><input type="text" class="form-control rounded-pill mb-3" placeholder="Search..." onkeyup="filterData('teacherList', this.value)"><div class="container" id="teacherList"></div><div class="contact-section-fixed">...</div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
+    <div id="section4" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Police</h2><input type="text" class="form-control rounded-pill mb-3" placeholder="Search..." onkeyup="filterData('policeList', this.value)"><div class="container" id="policeList"></div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
+    <div id="section5" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Army</h2><div class="container" id="armyList"></div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
+    <div id="section6" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Students</h2><input type="text" class="form-control rounded-pill mb-3" placeholder="Search..." onkeyup="filterData('studentList', this.value)"><div class="container" id="studentList"></div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
+    
+    <div id="section9" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Healthcare</h2><div class="container" id="healthcareList"></div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
+    <div id="section10" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Banking</h2><div class="container" id="bankingList"></div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
+    <div id="section11" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Railways</h2><div class="container" id="railwayList"></div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
+    <div id="section12" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Others</h2><div class="container" id="othersList"></div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
 
-    <div id="section4" style="display: none;">
-        <div class="second_container d-flex flex-column align-items-center">
-            <h2 class="main_section_heading mb-4">Police Directory</h2>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-10">
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770460446/WhatsApp_Image_2026-02-07_at_15.50.21_hh26jl.jpg" class="profile-img mr-3" alt="Police">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name and Rank: M. Gabbar Singh, PC</h3>
-                                    <p class="detail-text"><strong>Wing:</strong> Law & Order</p>
-                                    <p class="detail-text"><strong>Posting:</strong> Nizamabad Town-VI</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770462200/WhatsApp_Image_2026-02-07_at_16.32.32_x8988v.jpg" class="profile-img mr-3" alt="Police">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name and Rank: Bassi Jeevandas, PC</h3>
-                                    <p class="detail-text"><strong>Wing:</strong> SDRF and TGSP</p>
-                                    <p class="detail-text"><strong>Posting:</strong> 7th Battalion, Dichpally</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770471965/IMG-20260206-WA0074_-_BASSI_GANESH_gqqgo4.jpg" class="profile-img mr-3" alt="Police">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name and Rank: Bassi Ganesh , PC</h3>
-                                    <p class="detail-text"><strong>Wing:</strong> SDRF/RAF</p>
-                                    <p class="detail-text"><strong>Posting:</strong> 7th Battalion, Dichpally</p>
-                                    <p class="detail-text"><strong>contact number:</strong> 6302128939</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770478906/IMG_20190721_124825_-_MANJA_PELACH_va0kae.jpg" class="profile-img mr-3" alt="Police">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name and Rank: MANJA PELACH  , PC</h3>
-                                    <p class="detail-text"><strong>Wing:</strong> TELANGANA SPECIAL POLICE </p>
-                                    <p class="detail-text"><strong>Posting:</strong> 7th Battalion, Dichpally</p>
-                                    <p class="detail-text"><strong>contact number:</strong> 8500004326</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-11 text-center contact-section shadow-sm">
-                    <p class="contact-text">If your name does not exist, please contact on:</p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                        <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
-                        <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
-        </div>
-    </div>
+    <div id="section8" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Latest Updates</h2><div class="container"><div class="notification-card p-3 mb-3 border-primary" onclick="window.open('https://internshala.com/free-job-alerts/')"><h5>Job Alerts <i class="fas fa-external-link-alt"></i></h5><p>Visit Internshala</p></div><div class="notification-card p-3 mb-3 border-success" onclick="window.open('https://www.buddy4study.com/')"><h5>Scholarships <i class="fas fa-external-link-alt"></i></h5><p>Visit Buddy4Study</p></div></div><button class="btn btn-secondary mt-3" onclick="display('section2')">Back</button></div></div>
 
-    <div id="section5" style="display: none;">
-        <div class="second_container d-flex flex-column align-items-center">
-            <h2 class="main_section_heading mb-4">Army Directory</h2>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-10">
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770461227/WhatsApp_Image_2026-02-07_at_16.15.05_nreswz.jpg" class="profile-img mr-3" alt="Army">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name: Manja Eshwar</h3>
-                                    <p class="detail-text"><strong>Corps:</strong> Driving</p>
-                                    <p class="detail-text"><strong>Entry:</strong> Open Rally Agniveer</p>
-                                    <p class="detail-text"><strong>Insta:</strong> eshwar_love_</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-11 text-center contact-section shadow-sm">
-                    <p class="contact-text">If your name does not exist, please contact on:</p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                        <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
-                        <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
-        </div>
-    </div>
+    <div id="section7" style="display: none;"><div class="second_container d-flex flex-column align-items-center"><h2>Add Profile</h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSfnKjZOQUBhKvCy4MRuP0uENqE9xeALEmA6b3DChGX7YayScQ/viewform" target="_blank" class="btn btn-primary p-3 rounded-pill shadow">Open Form</a><button class="btn btn-secondary mt-5" onclick="display('section2')">Back</button></div></div>
 
-    <div id="section6" style="display: none;">
-        <div class="second_container d-flex flex-column align-items-center">
-            <h2 class="main_section_heading mb-4">Students Directory</h2>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-10">
+    <script>
+        // EVERY SINGLE MEMBER WE HAVE DISCUSSED (STAY PERMANENT)
+        const permanentData = [
+            // TEACHERS
+            {name: "Bardhaval Meghraj", details: "JL History | Domakonda College | 889751935", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770470614/WhatsApp_Image_2026-02-07_at_18.17.34_umwaoy.jpg", category: "Teacher"},
+            {name: "Manja Penatiah", details: "ALL Subjects | Gauraram | 8008070900", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770457102/WhatsApp_Image_2026-02-07_at_15.04.39_w2xc7y.jpg", category: "Teacher"},
+            {name: "Manja Sharadha", details: "Pre-primary | Thipparam Thanda | 8008070900", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770458073/WhatsApp_Image_2026-02-07_at_15.24.02_yeerz9.jpg", category: "Teacher"},
+            // POLICE
+            {name: "M. Gabbar Singh", details: "Law & Order | Nizamabad Town-VI", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770460446/WhatsApp_Image_2026-02-07_at_15.50.21_hh26jl.jpg", category: "Police"},
+            {name: "Bassi Jeevandas", details: "SDRF and TGSP | Dichpally", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770462200/WhatsApp_Image_2026-02-07_at_16.32.32_x8988v.jpg", category: "Police"},
+            {name: "Bassi Ganesh", details: "SDRF/RAF | 6302128939", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770471965/IMG-20260206-WA0074_-_BASSI_GANESH_gqqgo4.jpg", category: "Police"},
+            {name: "MANJA PELACH", details: "TG Special Police | 8500004326", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770478906/IMG_20190721_124825_-_MANJA_PELACH_va0kae.jpg", category: "Police"},
+            // ARMY
+            {name: "Manja Eshwar", details: "Driving | Open Rally Agniveer", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770461227/WhatsApp_Image_2026-02-07_at_16.15.05_nreswz.jpg", category: "Army"},
+            // STUDENTS
+            {name: "Baman Teja", details: "M.Tech | IIT BHUBANESWAR (2028)", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770458789/WhatsApp_Image_2026-02-07_at_15.28.11_qk9p6t.jpg", category: "Student"},
+            {name: "Manja Ranjeeth", details: "B.Tech | NIT Warangal (2027)", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770459674/WhatsApp_Image_2026-02-07_at_15.50.16_jqejlr.jpg", category: "Student"},
+            {name: "Sable Pathesingh", details: "B.Tech | LPU (2027)", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770458991/WhatsApp_Image_2026-02-07_at_15.08.31_e2gcld.jpg", category: "Student"},
+            {name: "Manja Charanjeeth", details: "B.Tech | RGIPT Amethi (2028)", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770461903/WhatsApp_Image_2026-02-07_at_16.24.39_wbka9l.jpg", category: "Student"},
+            {name: "Baman Vijay", details: "B.Tech | NIT Warangal (2029)", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770471782/Photo_-_Baman_Vijay_xerdfm.jpg", category: "Student"},
+            {name: "Vamshi Baman", details: "B.Tech | NIT Warangal (2029)", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770572121/28010_optimized_900_-_Baman_Vamshi_rvludr.jpg", category: "Student"},
+            {name: "T Jail singh", details: "BA History | Govt City College (2026)", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770459947/WhatsApp_Image_2026-02-07_at_15.55.19_q3anmf.jpg", category: "Student"},
+            {name: "Bardal Ganesh", details: "BA | Govt City College (2028)", photo: "https://res.cloudinary.com/dawr322yk/image/upload/v1770478671/Ganesh_-_Bardal_Ganesh_riecuo.jpg", category: "Student"}
+        ];
 
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770458789/WhatsApp_Image_2026-02-07_at_15.28.11_qk9p6t.jpg" class="profile-img mr-3" alt="Student">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name: Baman Teja</h3>
-                                    <p class="detail-text"><strong>Course:</strong> M.Tech 3rd Year</p>
-                                    <p class="detail-text"><strong>College:</strong> IIT BHUBANESWAR</p>
-                                    <p class="detail-text"><strong>Year of Completion:</strong> 2028</p>
-                                    <p class="detail-text"><strong>linkedin:</strong> Baman Teja</p>
-                                </div>
-                            </div>
-                        </div>
+        function toggleEdge() { document.getElementById('mainEdgePanel').classList.toggle('active'); }
+        function display(sId) {
+            const ids = ["section1","section2","section3","section4","section5","section6","section7","section8","section9","section10","section11","section12"];
+            ids.forEach(id => { if(document.getElementById(id)) document.getElementById(id).style.display = (id === sId) ? "block" : "none"; });
+        }
+        function filterData(listId, val) {
+            let filter = val.toLowerCase();
+            let cards = document.querySelectorAll('#' + listId + ' .profile-card');
+            cards.forEach(card => card.style.display = card.innerText.toLowerCase().includes(filter) ? "block" : "none");
+        }
 
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770459674/WhatsApp_Image_2026-02-07_at_15.50.16_jqejlr.jpg" class="profile-img mr-3" alt="Student">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name: Manja Ranjeeth</h3>
-                                    <p class="detail-text"><strong>Course:</strong> B.Tech 3rd Year</p>
-                                    <p class="detail-text"><strong>College:</strong> NIT Warangale</p>
-                                    <p class="detail-text"><strong>Year of Completion:</strong> 2027</p>
-                                    <p class="detail-text"><strong>linkedin:</strong>Ranjeeth Manja</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770458991/WhatsApp_Image_2026-02-07_at_15.08.31_e2gcld.jpg" class="profile-img mr-3" alt="Student">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name:Sable Pathesingh</h3>
-                                    <p class="detail-text"><strong>Course:</strong> B.Tech 3rd Year</p>
-                                    <p class="detail-text"><strong>College:</strong> Lovely Professional Unversity</p>
-                                    <p class="detail-text"><strong>Year of Completion:</strong> 2027</p>
-                                    <p class="detail-text"><strong>linkedin:</strong> Sable Pathesingh</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770461903/WhatsApp_Image_2026-02-07_at_16.24.39_wbka9l.jpg" class="profile-img mr-3" alt="Student">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name: Manja Charanjeeth</h3>
-                                    <p class="detail-text"><strong>Course:</strong> B.Tech 2nd Year</p>
-                                    <p class="detail-text"><strong>College:</strong> Rajiv Gandhi Institute of Petroleum Technology. Jais, Amethi, Uttar Pradesh</p>
-                                    <p class="detail-text"><strong>Year of Completion:</strong> 2028</p>
-                                    <p class="detail-text"><strong>linkedin/instagram:</strong>manja Charanjeeth</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770471782/Photo_-_Baman_Vijay_xerdfm.jpg" class="profile-img mr-3" alt="Student">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name: BAMAN VIJAY</h3>
-                                    <p class="detail-text"><strong>Course:</strong> B.Tech 1st Year</p>
-                                    <p class="detail-text"><strong>College:</strong> NIT Warangale</p>
-                                    <p class="detail-text"><strong>Year of Completion:</strong> 2029</p>
-                                    <p class="detail-text"><strong>mail_id:</strong>bamanvijay23@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770572121/28010_optimized_900_-_Baman_Vamshi_rvludr.jpg" class="profile-img mr-3" alt="Student">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name:Vamshi Baman</h3>
-                                    <p class="detail-text"><strong>Course:</strong> B.tech 1st year</p>
-                                    <p class="detail-text"><strong>College:</strong>  in  NIT WARANGAL</p>
-                                    <p class="detail-text"><strong>Year of Completion:</strong> 2029</p>
-                                    <p class="detail-text"><strong>email:</strong> bamanvamshi@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770459947/WhatsApp_Image_2026-02-07_at_15.55.19_q3anmf.jpg" class="profile-img mr-3" alt="Student">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name:T Jail singh</h3>
-                                    <p class="detail-text"><strong>Course:</strong> BA(Honours) History</p>
-                                    <p class="detail-text"><strong>College:</strong>Govt. city colleage(A)</p>
-                                    <p class="detail-text"><strong>Year of Completion:</strong> 2026</p>
-                                    <p class="detail-text"><strong>linkedin:</strong> Jail singh t</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-card shadow-sm p-3 mb-4">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="https://res.cloudinary.com/dawr322yk/image/upload/v1770478671/Ganesh_-_Bardal_Ganesh_riecuo.jpg" class="profile-img mr-3" alt="Student">
-                                <div class="profile-info">
-                                    <h3 class="name-text">Full Name:Bardal Ganesh </h3>
-                                    <p class="detail-text"><strong>Course:</strong> BA</p>
-                                    <p class="detail-text"><strong>College:</strong>Govt. city colleage(A)</p>
-                                    <p class="detail-text"><strong>Year of Completion:</strong> 2028</p>
-                                    <p class="detail-text"><strong>linkedin:</strong> bardalganesh</p>
-                                </div>
-                            </div>
-                        </div>
+        async function fetchNewEntries() {
+            const apiURL = "https://script.google.com/macros/s/AKfycbxIdJ8i6PzTNWXj5mWlMDXBvzgEjVPiknzMZ_cfz8kVhhzRM91EsQQu1vd9YCC9qBPZ/exec"; 
+            const defaultIcon = "https://cdn-icons-png.flaticon.com/512/149/149071.png";
+            const containers = {"Student":"studentList","Teacher":"teacherList","Police":"policeList","Army":"armyList","Healthcare":"healthcareList","Banking":"bankingList","Railways":"railwayList","Others":"othersList"};
 
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-11 text-center contact-section shadow-sm">
-                    <p class="contact-text">If your name does not exist, please contact on:</p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="https://www.instagram.com/troubleshooter_19" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                        <a href="https://www.linkedin.com/in/ranjeethmanja" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 icon-li"></i></a>
-                        <a href="https://www.instagram.com/mathura_labana_ranjeeth" target="_blank"><i class="fab fa-instagram fa-2x mx-3 icon-ig"></i></a>
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
-        </div>
-    </div>
+            // Clear old content
+            Object.values(containers).forEach(cId => { if(document.getElementById(cId)) document.getElementById(cId).innerHTML = ""; });
 
+            // RENDER HARDCODED DATA
+            permanentData.forEach(item => renderCard(item, containers, defaultIcon));
 
-    <div id="section7" style="display: none;">
-    <div class="second_container d-flex flex-column align-items-center">
-        <h2 class="main_section_heading mb-4">Add Your Information</h2>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-11 col-md-8 profile-card shadow p-5 text-center">
-                    <i class="fas fa-file-alt fa-3x mb-3 text-primary"></i>
-                    <h3 class="name-text">Join the Mathura Labana Network</h3>
-                    <p class="detail-text mb-4">
-                        Please click the button below to fill out our official Google Form. 
-                        Once you submit your details, we will review and add you to the directory.
-                    </p>
-                    
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnKjZOQUBhKvCy4MRuP0uENqE9xeALEmA6b3DChGX7YayScQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary btn-block rounded-pill shadow font-weight-bold p-3">
-                        Open Google Form <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-secondary btn-custom mt-4" onclick="display('section2')">Back</button>
-    </div>
-</div>
-    <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+            // RENDER NEW SHEET DATA
+            try {
+                const res = await fetch(apiURL);
+                const sheetData = await res.json();
+                sheetData.forEach(item => renderCard(item, containers, defaultIcon));
+            } catch (e) { console.log("Static Mode Ready"); }
+        }
+
+        function renderCard(item, containers, defaultIcon) {
+            let photo = (item.photo && item.photo.includes("http") && !item.photo.includes("drive.google.com")) ? item.photo : defaultIcon;
+            let card = `<div class="profile-card shadow-sm p-3 mb-4"><div class="d-flex align-items-center"><img src="${photo}" class="profile-img mr-3"><div class="profile-info"><h3 class="name-text">${item.name}</h3><p class="detail-text">${item.details}</p></div></div></div>`;
+            let cId = containers[item.category];
+            if(document.getElementById(cId)) document.getElementById(cId).innerHTML += card;
+        }
+
+        window.onload = fetchNewEntries;
+    </script>
 </body>
-
 </html>
